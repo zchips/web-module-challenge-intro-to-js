@@ -21,7 +21,14 @@ Do the following:
 */
 
 
-
+let votingAge = 'dog';
+ if(votingAge > 26) {
+  console.log(true);
+  } else if( votingAge < 25){
+  console.log('you should not vote')
+  }else {
+  console.log('you are a dog')
+ }
 /*
 Task 1b - Values (not auto tested)
 
@@ -33,7 +40,11 @@ Do the following:
 
    HINT: no function required
 */
-
+let firstThing = 'zach';
+let secondThing = 25;
+let thirdThing = 'falsey';
+if (secondThing === 25){console.log("this is " +firstThing +' and he is '+ secondThing + 'and this is working and finished')}
+else{console.log(thirdThing)}
 
 
 
@@ -48,6 +59,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+let stringType = "1999"
+let integerType = parseInt(stringType)
+console.log(integerType)
 
 
 
@@ -65,6 +79,9 @@ function multiply(num1, num2){
   return num1 * num2;
 }
 
+multiply(1,2)
+console.log(multiply(1,2))
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -80,7 +97,7 @@ Do the following:
 function dogYears(age){
  return age * 7 
 }
-
+dogYears(1)
 console.log(dogYears(1))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
