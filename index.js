@@ -80,7 +80,7 @@ function multiply(num1, num2){
 }
 
 multiply(1,2)
-console.log(multiply(1,2))
+console.log('task 1d', multiply(1,2))
 
 
 
@@ -98,7 +98,7 @@ function dogYears(age){
  return age * 7 
 }
 dogYears(1)
-console.log(dogYears(1))
+console.log('task 2', dogYears(1))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -146,10 +146,26 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight, age){
+  if(age >= 1 && weight <= 5){
+    return weight * .05;
+  }else if( age >= 1 && weight >= 6 && weight <= 10){
+    return weight * .04;
+  }else if ( age >= 1 && weight >= 11 && weight <= 15){
+    return weight * .03;
+  }else if ( age >= 1 && weight > 15){
+    return weight * .02;
+  } else if (age < .33){
+    return weight * .10;
+  }else if (age < .66){
+    return weight * .05
+  }else if ( age < 1){
+    return weight * .04
+  }else {
+    return 'this may not be a dog'
+  }
 }
-
+console.log('task 3', hungryDog(15, 1))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -172,12 +188,30 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
+function game(){}
+// let computer = Math.random();
+// if(computer <= .34){
+//   computer = 'rock'
+// }else if( computer <= .67){
+//   computer = 'paper'
+// }else if(computer = 'scissors')
 
-function game(user, computer){
-  /*add your code here*/
-}
+// function game(user, computer){
+//   if(user === computer){
+//     return 'its a tie'
+//   }else if( user === 'rock' && computer === 'scissors'){
+//     return 'user wins'
+//   }else if(user ==='scissors' && computer === 'paper'){
+//     return 'user wins'
+//   }else if( user === 'paper' && computer === 'rock'){
+//     return 'user wins'
+//   } else{
+//     return 'you lose'
+//   }
 
+// }
 
+// console.log(game('paper', computer))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -190,11 +224,12 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(km){
+  return km * .621371
   /*add your code here*/
 }
 
-
+console.log('task 5a', miles(4))
 
 //Task 5b - Centimeters to Feet
 /*
@@ -204,10 +239,11 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48 
 }
 
+console.log('task 5b ', feet(10000))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -224,10 +260,11 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+for(let i = number; i > 0; i--){
+return `${i} bottles of soda on the wall,${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`;}
 }
-
+console.log('task 6 ', annoyingSong(5))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -244,10 +281,12 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(number){
+if(number >= 90 && number <= 100){
+  return 'you got an A'
+}else if (number >= 80 && number <= 89 ){return 'you got a B'}else if (number >= 70 && number <= 79){return 'you got a C'}else if (number >= 60 && number <= 69 ){return 'you got a D'}else if (number < 60 ){return 'you got an F'}
 }
-
+console.log( 'task 7', grade(100))
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
